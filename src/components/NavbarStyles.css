@@ -7,6 +7,11 @@
     width: 95%;
     height: 80px;
     border-radius: 13px;
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
 }
 
 .navbar-logo {
@@ -72,8 +77,11 @@
     color: #fff;
 }
 
+.menu-icons {
+    display: none;
+}
 
-/* 1.01.53 */
+
 @media screen and (max-width: 850px) {
     .NavbarItems {
         z-index: 99;
@@ -88,12 +96,20 @@
         height: auto;
         position: absolute;
         top: 0;
-        left: 0;
-        opacity: 1;
+        left: -100%;
+        opacity: 0;
         align-items: stretch;
         padding: 80px 0 30px 0;
         margin: 0;
+        transition: .3s ease-in-out;
+        border-radius: 13px;
+    }
+
+    .activeNav {
+        left: 0%;
+        opacity: 1;
         z-index: -1;
+        transition: .3s ease-in-out;
     }
 
     .nav-links {
@@ -131,4 +147,15 @@
         font-weight: 700;
         letter-spacing: 2px;
     }
+
+    .menu-icons {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-icons i {
+        font-size: 1.3rem;
+        color: #222;
+    }
+
 }

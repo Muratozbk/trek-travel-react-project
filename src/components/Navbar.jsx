@@ -21,7 +21,8 @@ class Navbar extends Component {
                             "fa-times" : "fa-bars"}`}></i>
                     </div>
 
-                    <ul className='nav-menu'>
+                    <ul className={this.state.clicked ? 'nav-menu activeNav' :
+                        'nav-menu'}>
                         {MenuItems.map((item, ind) => (
                             <li key={ind} className={item.cName}>
                                 <Link to={item.url} >
@@ -39,6 +40,6 @@ class Navbar extends Component {
         )
     }
 }
-
+// 1.11.20
 
 export default Navbar
