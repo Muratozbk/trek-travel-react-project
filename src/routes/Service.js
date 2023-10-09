@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 
-function Home() {
+function Service() {
     return (
         <>
             <Navbar />
-            <h1>Home page</h1>
+            <h1>service page</h1>
         </>
     )
 }
 
-export default Home
+export default Service

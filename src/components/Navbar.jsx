@@ -40,6 +40,5 @@ class Navbar extends Component {
         )
     }
 }
-// 1.11.20
 
 export default Navbar
