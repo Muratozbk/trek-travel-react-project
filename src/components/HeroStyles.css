@@ -48,6 +48,11 @@ img {
     color: #222;
 }
 
+.hero-text .show:hover {
+    font-size: 1.15rem;
+    border: 3px solid #2aa0bd;
+}
+
 
 .hero-text .hide {
     display: none;
@@ -68,5 +73,9 @@ img {
         padding: .6rem 1.1rem;
         border-radius: .5rem;
         font-size: 1rem;
+    }
+
+    .hero-text .show:hover {
+        font-size: 1.04rem;
     }
 }

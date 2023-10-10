@@ -13,6 +13,14 @@
     margin-top: 4.5rem;
 }
 
+.first-des-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
 .des-text {
     width: 45%;
     text-align: start;
@@ -55,6 +63,11 @@
         margin-top: 2.5rem;
     }
 
+    .first-des-reverse {
+        flex-direction: column-reverse;
+        margin-top: 2.5rem;
+    }
+
     .des-text {
         width: 100%;
     }
@@ -68,5 +81,3 @@
         height: 250px;
     }
 }
-
-/* 2.16.40 */
