@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Img12 from '../assets/12.jpg'
+import Destination from '../components/Destination'
 
 function Home() {
     return (
@@ -14,7 +15,10 @@ function Home() {
                 text="Choose your favourite destination."
                 buttonText="Travel Plan"
                 url='/'
-                btnClass="show" />
+                btnClass="show"
+            />
+
+            <Destination />
         </>
     )
 }
