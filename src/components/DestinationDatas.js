@@ -26,4 +26,3 @@ function DestinationDatas(props) {
 }
 
 export default DestinationDatas
-// 2.30.35

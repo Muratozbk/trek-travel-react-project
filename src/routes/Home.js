@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Img12 from '../assets/12.jpg'
 import Destination from '../components/Destination'
+import Trip from '../components/Trip'
 
 function Home() {
     return (
@@ -19,6 +20,7 @@ function Home() {
             />
 
             <Destination />
+            <Trip />
         </>
     )
 }
