@@ -3,8 +3,8 @@ import '../components/TripStyles.css';
 
 function TripData(props) {
     return (
-        <div className='trip-card'>
-            <div className="trip-image">
+        <div className='t-card'>
+            <div className="t-image">
                 <img src={props.image} alt="trip" />
             </div>
             <h4>{props.heading} </h4>
