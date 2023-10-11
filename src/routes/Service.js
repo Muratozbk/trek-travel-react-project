@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import AboutImg from '../assets/3.jpg'
+import Footer from '../components/Footer'
 
 function Service() {
     return (
@@ -12,9 +13,10 @@ function Service() {
                 heroImg={AboutImg}
                 title='Service'
                 btnClass="hide" />
+            <Footer />
         </>
     )
 }
 
 export default Service
-// 1.59.23
+// 3.01.00
