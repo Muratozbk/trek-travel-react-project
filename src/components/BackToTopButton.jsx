@@ -1,13 +1,12 @@
 
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom';
 
 function BackToTopButton() {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
         const scrollListener = () => {
-            if (window.scrollY > 100) {
+            if (window.scrollY > 300) {
                 setIsVisible(true)
             } else {
                 setIsVisible(false)
@@ -20,14 +19,22 @@ function BackToTopButton() {
 
     }, []);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
     return (
         <>
             {isVisible && (
-                <Link to="top"  >
-                    <div className="back-to-top">
-                        <i className="fa-solid fa-arrow-up"></i>
-                    </div>
-                </Link>
+
+                <div className="back-to-top"
+                    onClick={scrollToTop}>
+                    <i className="fa-solid fa-angle-up"></i>
+                </div>
+
             )}
         </>
     )
