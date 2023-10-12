@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-import AboutImg from '../assets/3.jpg'
+import AboutImg from '../assets/night.jpg'
 import Footer from '../components/Footer'
+import BackToTopButton from '../components/BackToTopButton'
+import Trip from '../components/Trip'
 
 function Service() {
     return (
@@ -13,10 +15,11 @@ function Service() {
                 heroImg={AboutImg}
                 title='Service'
                 btnClass="hide" />
+            <Trip />
             <Footer />
+            <BackToTopButton />
         </>
     )
 }
 
 export default Service
-// 3.01.00
