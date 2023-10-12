@@ -79,12 +79,13 @@
   border-radius: .3rem;
   width: 12rem;
   margin: auto;
-  opacity: .85;
+  opacity: .8;
 }
 
 .from-container button:hover {
   opacity: 1;
   background-color: #dbdbdb;
+
 }
 
 @media screen and (max-width:850px) {

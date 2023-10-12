@@ -6,6 +6,10 @@ import Footer from '../components/Footer'
 import BackToTopButton from '../components/BackToTopButton'
 
 function Contact() {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    };
+
     return (
         <>
             <Navbar />
@@ -17,7 +21,7 @@ function Contact() {
 
             <div className="from-container">
                 <h1>Send a message to us!</h1>
-                <form >
+                <form onSubmit={handleSubmit} >
                     <input placeholder='Name' />
                     <input placeholder='Email' />
                     <input placeholder='Subject' />
@@ -31,7 +35,5 @@ function Contact() {
         </>
     )
 }
-
-// 3.13.30
 
 export default Contact
