@@ -5,8 +5,10 @@ import Img12 from '../assets/12.jpg'
 import Destination from '../components/Destination'
 import Trip from '../components/Trip'
 import Footer from '../components/Footer'
+import BackToTopButton from '../components/BackToTopButton'
 
 function Home() {
+
     return (
         <>
             <Navbar />
@@ -23,6 +25,7 @@ function Home() {
             <Destination />
             <Trip />
             <Footer />
+            <BackToTopButton />
         </>
     )
 }
